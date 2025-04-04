@@ -1,28 +1,36 @@
-Lets discuss about Next.JS Project
+Next.js Project Overview
+In this tutorial, we will explore building a project with Next.js and incorporate the ShadCN UI framework, which is highly recommended for our needs.
 
-lets pick the frame work to work with Next.JS 
+Dashboard Link
+You can find the dashboard at: ShadCN UI Dashboard
 
-#ShadCN UI which is best so lets move on it
+Step 1: Install ShadCN UI
+To get started, run the following command to initialize ShadCN in your Next.js project:
 
-the link of the dashboard i https://ui.shadcn.com/
-then  pic Next.JS
+bash
 
-# instal shadcn
- npx shadcn@latest init
+Copy
+npx shadcn@latest init
+Step 2: Add a Component
+Next, let’s add a button component using:
 
+bash
 
-# add commponent
+Copy
 npx shadcn@latest add button
+Formatting Currency
+Another essential package for our project is query-string, which helps format balances or currencies based on country codes. Install it using:
 
+bash
 
-===========================format money==================
-another important link is 
+Copy
+npm install query-string
+Sample Code for Formatting Amount
+Here’s a sample function to format currency amounts:
 
-npm install query-string 
-this pakage us used to format the balance or currenct based on the country code
+javascript
 
-
-sample code
+Copy
 export function formatAmount(amount: number): string {
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -32,47 +40,52 @@ export function formatAmount(amount: number): string {
 
   return formatter.format(amount);
 }
-===================================================
+Count Number Animation
+Next, we will implement an animated count using the react-countup package. Install it with:
 
+bash
 
-
-===========================Count Number Animation==================
-
-next we will see one import package which is react-countup 
-
+Copy
 npm install react-countup
-sample code  and use this in client commponent and import a
+Sample Code for Count Animation
+Use the following code in your client component:
 
-  <CountUp
-      end={amount}
-      start={0}
-      prefix="Total of ET "
-      suffix=" Birr"
-      duration={1.5}
-      separator=" "
-    />
+javascript
 
+Copy
+<CountUp
+  end={amount}
+  start={0}
+  prefix="Total of ET "
+  suffix=" Birr"
+  duration={1.5}
+  separator=" "
+/>
+Integrating Charts
+We will use Chart.js for data visualization. Learn more at Chart.js.
 
+Installation Commands
+First, install Chart.js:
 
-===========================React Chart==================
+bash
 
-so lets dive into chart.JS
-the link https://www.chartjs.org/
- the instalation command is
- npm install chart.js
+Copy
+npm install chart.js
+Then, install the React wrapper for Chart.js:
 
- next install chartjs2 for react
+bash
 
- npm install react-chartjs-2 
- for step by step guid use doc in the link
- https://react-chartjs-2.js.org/
+Copy
+npm install react-chartjs-2
+For a step-by-step guide, refer to the documentation here: React Chart.js 2 Docs.
 
+Designing a Mobile View Sidebar
+For designing a mobile view sidebar, refer to the following link: ShadCN UI Sheet Component.
 
+Installation Command for Sheet Component
+Run this command to add the sheet component:
 
+bash
 
-===========================Lets move into design mobile view sidebar ==================
-the link are 
-https://ui.shadcn.com/docs/components/sheet
-
-installation 
+Copy
 npx shadcn@latest add sheet
