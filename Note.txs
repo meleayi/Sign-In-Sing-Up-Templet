@@ -13,3 +13,66 @@ then  pic Next.JS
 
 # add commponent
 npx shadcn@latest add button
+
+
+===========================format money==================
+another important link is 
+
+npm install query-string 
+this pakage us used to format the balance or currenct based on the country code
+
+
+sample code
+export function formatAmount(amount: number): string {
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2,
+  });
+
+  return formatter.format(amount);
+}
+===================================================
+
+
+
+===========================Count Number Animation==================
+
+next we will see one import package which is react-countup 
+
+npm install react-countup
+sample code  and use this in client commponent and import a
+
+  <CountUp
+      end={amount}
+      start={0}
+      prefix="Total of ET "
+      suffix=" Birr"
+      duration={1.5}
+      separator=" "
+    />
+
+
+
+===========================React Chart==================
+
+so lets dive into chart.JS
+the link https://www.chartjs.org/
+ the instalation command is
+ npm install chart.js
+
+ next install chartjs2 for react
+
+ npm install react-chartjs-2 
+ for step by step guid use doc in the link
+ https://react-chartjs-2.js.org/
+
+
+
+
+===========================Lets move into design mobile view sidebar ==================
+the link are 
+https://ui.shadcn.com/docs/components/sheet
+
+installation 
+npx shadcn@latest add sheet

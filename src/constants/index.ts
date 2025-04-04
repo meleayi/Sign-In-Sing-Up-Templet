@@ -1,26 +1,26 @@
 export const sidebarLinks = [
   {
-    imgURL: "/icons/home.svg",
+    imgURL: "/images/logo.png",
     route: "/",
     label: "Home",
     role: ["Admin", "Teacher", "Guest"],
   },
   {
-    imgURL: "/icons/dollar-circle.svg",
-    route: "/my-banks",
-    label: "My Banks",
+    imgURL: "/images/logo.png",
+    route: "/user-managment",
+    label: "Manage User",
     role: ["Admin", "Teacher", "Guest"],
   },
   {
-    imgURL: "/icons/transaction.svg",
-    route: "/transaction-history",
-    label: "Transaction History",
+    imgURL: "/images/logo.png",
+    route: "/student",
+    label: "Student",
     role: ["Admin", "Teacher", "Guest"],
   },
   {
-    imgURL: "/icons/money-send.svg",
-    route: "/payment-transfer",
-    label: "Transfer Funds",
+    imgURL: "/images/logo.png",
+    route: "/teacher",
+    label: "Teachers",
     role: ["Admin", "Teacher", "Guest"],
   },
 ];
@@ -65,7 +65,7 @@ export const topCategoryStyles = {
       bg: "bg-blue-100",
       indicator: "bg-blue-700",
     },
-    icon: "/icons/monitor.svg",
+    icon: "/images/monitor.svg",
   },
   Travel: {
     bg: "bg-success-25",
@@ -78,7 +78,7 @@ export const topCategoryStyles = {
       bg: "bg-success-100",
       indicator: "bg-success-700",
     },
-    icon: "/icons/coins.svg",
+    icon: "/images/coins.svg",
   },
   default: {
     bg: "bg-pink-25",
@@ -91,7 +91,7 @@ export const topCategoryStyles = {
       bg: "bg-pink-100",
       indicator: "bg-pink-700",
     },
-    icon: "/icons/shopping-bag.svg",
+    icon: "/images/shopping-bag.svg",
   },
 };
 

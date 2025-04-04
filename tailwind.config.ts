@@ -69,6 +69,9 @@ const config = {
           900: "#101828",
         },
       },
+      textColor: {
+        loginGradient: "#0179FE", // Explicitly add to textColor
+      },
       backgroundImage: {
         "bank-gradient": "linear-gradient(90deg, #0179FE 0%, #4893FF 100%)",
         "gradient-mesh": "url('/icons/gradient-mesh.svg')",

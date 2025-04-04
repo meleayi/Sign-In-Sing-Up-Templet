@@ -1,5 +1,14 @@
 /* eslint-disable no-unused-vars */
 
+declare type HeaderBoxProps = {
+  type?: "title" | "greeting";
+  title: string;
+  user?: string;
+  subtitle: string;
+};
+
+// MY TYPE CODE
+
 declare type SearchParamProps = {
   params: { [key: string]: string };
   searchParams: { [key: string]: string | string[] | undefined };
@@ -24,6 +33,11 @@ declare type LoginUser = {
   email: string;
   password: string;
 };
+export type BasicUserInfo = {
+  firstName: string;
+  lastName: string;
+};
+
 
 declare type User = {
   $id: string;
@@ -41,6 +55,9 @@ declare type User = {
   dateOfBirth: string;
   ssn: string;
 };
+declare interface SiderbarProps {
+  user: User;
+}
 
 declare type NewUserParams = {
   userId: string;
@@ -149,13 +166,6 @@ declare interface BankInfoProps {
   type: "full" | "card";
 }
 
-declare interface HeaderBoxProps {
-  type?: "title" | "greeting";
-  title: string;
-  subtext: string;
-  user?: string;
-}
-
 declare interface MobileNavProps {
   user: User;
 }
@@ -211,7 +221,7 @@ declare interface TotalBalanceBoxProps {
 
 declare interface FooterProps {
   user: User;
-  type?: 'mobile' | 'desktop'
+  type?: "mobile" | "desktop";
 }
 
 declare interface RightSidebarProps {
@@ -220,9 +230,7 @@ declare interface RightSidebarProps {
   banks: Bank[] & Account[];
 }
 
-declare interface SiderbarProps {
-  user: User;
-}
+
 
 declare interface RecentTransactionsProps {
   accounts: Account[];

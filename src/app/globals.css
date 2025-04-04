@@ -18,6 +18,9 @@
 
 /* Custom utilities */
 @layer utilities {
+  .loginGradient {
+    @apply text-[#0179FE];
+  }
   .input-class {
     @apply text-[16px] placeholder:text-[16px] rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-500;
   }
@@ -75,5 +78,10 @@
 
   .form-link {
     @apply text-[14px] cursor-pointer font-medium;
+  }
+
+  /* HeaderBox */
+  .headerbox-subtitle {
+    @apply text-[14px] lg:text-[16px] font-normal text-gray-600;
   }
 }
