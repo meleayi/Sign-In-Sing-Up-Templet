@@ -1,0 +1,15 @@
+Lets discuss about Next.JS Project
+
+lets pick the frame work to work with Next.JS 
+
+#ShadCN UI which is best so lets move on it
+
+the link of the dashboard i https://ui.shadcn.com/
+then  pic Next.JS
+
+# instal shadcn
+ npx shadcn@latest init
+
+
+# add commponent
+npx shadcn@latest add button
