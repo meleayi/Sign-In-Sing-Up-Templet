@@ -5,6 +5,7 @@ import {
   SheetClose,
   SheetContent,
   SheetDescription,
+  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -21,10 +22,9 @@ interface MobileNavProps {
   user: BasicUserInfo; // Only require what the nav actually needs
 }
 
-
 const MobileNav = ({ user }: MobileNavProps) => {
   const pathname = usePathname();
-console.log(user)
+  console.log(user);
   return (
     <section className="w-full max-w-[264px]">
       <Sheet>
@@ -54,7 +54,7 @@ console.log(user)
               height={34}
               alt="User logo"
             />
-            <h1 className="text-[26px] font-ibm-plex-serif font-bold text-black">
+            <h1 className=" text-[18px] md:text-[26px] font-ibm-plex-serif  text-amber-300 font-semibold font-serif ">
               User Management
             </h1>
           </Link>
@@ -101,11 +101,15 @@ console.log(user)
                     </SheetClose>
                   );
                 })}
-                USER
               </nav>
             </SheetClose>
             {/* <Footer user={user} type="mobile" /> */}
           </div>
+          <SheetFooter>
+            <span className="text-amber-300 font-semibold font-serif ">
+              Melese Ayichlie <br /> meleayi2021@gmail.com
+            </span>
+          </SheetFooter>
         </SheetContent>
       </Sheet>
     </section>
